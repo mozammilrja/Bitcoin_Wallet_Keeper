@@ -128,27 +128,6 @@ npm run build
 2. Click "Refresh" next to the balance section
 3. The balance will be fetched from Sepolia testnet
 
-## Project Structure
-
-```
-├── app/                    # Next.js app directory
-├── components/            # React components
-│   ├── Navigation.tsx
-│   ├── WalletGenerator.tsx
-│   ├── WalletList.tsx
-│   ├── WalletDetail.tsx
-│   └── Notifications.tsx
-├── store/                 # Redux store and slices
-│   ├── index.ts
-│   ├── walletSlice.ts
-│   └── uiSlice.ts
-├── utils/                 # Utility functions
-│   ├── crypto.ts
-│   └── storage.ts
-├── __tests__/            # Test files
-└── README.md
-```
-
 ## Security Best Practices
 
 1. **Never share your private keys** - Anyone with access to your private key can control your wallet
@@ -174,31 +153,13 @@ This application is configured to work with Sepolia testnet. To get test ETH:
 - Redux slices handle specific state domains
 - Utility functions provide reusable logic
 
-### Adding Features
-1. Create new components in `/components`
-2. Add state management in appropriate Redux slices
-3. Add utility functions in `/utils`
-4. Write tests in `/__tests__`
-
 ### Testing Strategy
 - Unit tests for utility functions
 - Integration tests for Redux logic
 - Component tests for UI behavior
 - Mocked external dependencies
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Ensure all tests pass
-6. Submit a pull request
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Disclaimer
-
-This is educational software for learning purposes. Always use proper security practices and thoroughly test before using with real funds. The developers are not responsible for any loss of funds or security breaches.
